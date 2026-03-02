@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Centro de Ayuda Tecnológica</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>📽️ Uso correcto del proyector</h1>
+  </header>
+
+<div class="container">
+
+
+<h3>✔️ Antes de encender</h3>
+<ul>
+  <li>
+    Verificar conexión de energía.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img1')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    Verificar led de encendido.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img2')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    Usar Control Remoto.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img3')">Ver ejemplo</span>
+  </li>
+  <li>
+    Verificar cable HDMI/VGA.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img4')">Ver ejemplo</span>
+  </li>
+</ul>
+
+<div id="img1" class="popup" onclick="cerrarPopup('img1')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/interruptor.png">
+  </div>
+</div>
+
+<div id="img2" class="popup" onclick="cerrarPopup('img2')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/led.png">
+  </div>
+</div>
+
+<div id="img3" class="popup" onclick="cerrarPopup('img3')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/control.png">
+  </div>
+</div>
+
+<div id="img4" class="popup" onclick="cerrarPopup('img4')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/cables.png">
+  </div>
+</div>
+
+
+<h3>▶️ Encendido correcto</h3>
+<ol>
+  <li>Encender el proyector.</li>
+  <li>Esperar que la lámpara inicie.</li>
+  <li>Encender la computadora.</li>
+</ol>
+
+<h3>⚠️ Importante</h3>
+<ul>
+  <li>No desconectar mientras esté encendido.</li>
+  <li>Esperar que el ventilador se apague.</li>
+</ul>
+
+<div class="volver">
+  <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
+</div>
+</div>
+<script>
+  function mostrarPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function cerrarPopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+</body>
+</html>

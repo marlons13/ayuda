@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Centro de Ayuda Tecnológica</title>
+   <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>💻 ¿La computadora no enciende?</h1>
+  </header>
+<div class="container">
+<h3>✔️ Revisar antes de reportar</h3>
+<ul>
+  <li>
+    Verificar que el cable de energía esté bien conectado.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img1')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    Encender el estabilizador o UPS.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img2')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    Confirmar que haya energía eléctrica en el aula.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img3')">Ver ejemplo</span>
+  </li>
+</ul>
+
+<div id="img1" class="popup" onclick="cerrarPopup('img1')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/electricidad.png">
+  </div>
+</div>
+
+<div id="img2" class="popup" onclick="cerrarPopup('img2')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/estabilizador.png">
+  </div>
+</div>
+
+<div id="img3" class="popup" onclick="cerrarPopup('img3')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/confirmar.png">
+  </div>
+</div>
+
+
+
+<h3>▶️ Cómo encender correctamente</h3>
+<ol>
+  <li>Encender primero el estabilizador.</li>
+  <li>Presionar el botón de encendido de la computadora una sola vez.</li>
+  <li>Esperar a que cargue el sistema.</li>
+</ol>
+
+<h3>⚠️ Si no enciende</h3>
+<ul>
+  <li>No presionar varias veces el botón.</li>
+  <li>No desconectar cables bruscamente.</li>
+  <li>Reportar al área de soporte.</li>
+</ul>
+
+<div class="volver">
+  <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
+</div>
+
+
+</div>
+<script>
+  function mostrarPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function cerrarPopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Centro de Ayuda Tecnológica</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 Uso correcto del Internet del colegio</h1>
+  </header>
+
+<div class="container">
+<h3>✔️ Revisar</h3>
+<ul>
+  <li>
+    Que el cable esté conectado.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img1')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    El icono de Red.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img2')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    Página bloqueada.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img3')">Ver ejemplo</span>
+  </li>
+</ul>
+
+<div id="img1" class="popup" onclick="cerrarPopup('img1')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/cable.png">
+  </div>
+</div>
+
+<div id="img2" class="popup" onclick="cerrarPopup('img2')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/icono.png">
+  </div>
+</div>
+
+<div id="img3" class="popup" onclick="cerrarPopup('img3')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/bloqueo.png">
+  </div>
+</div>
+
+
+
+<h3>▶️ Uso correcto del Internet del colegio</h3>
+<ul>
+  <li>Uso exclusivamente educativo.</li>
+  <li>Buscar información académica.</li>
+  <li>Uso responsable del correo institucional.</li>
+</ul>
+<h3>⚠️ Recomendaciones</h3>
+<ul>
+  <li>❌ No intentar ingresar a páginas bloqueadas.</li>
+  <li>❌ No usar VPN o métodos para saltar restricciones.</li>
+  <li>❌ No descargar programas sin autorización.</li>
+</ul>
+<div class="volver">
+  <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
+</div>
+</div>
+<script>
+  function mostrarPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function cerrarPopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+</body>
+</html>

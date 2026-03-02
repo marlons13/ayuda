@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Centro de Ayuda Tecnológica</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>🔊 Sonido y ecualizador</h1>
+  </header>
+
+<div class="container">
+<h3>✔️ Revisar</h3>
+<ul>
+  <li>
+    Que el ecualizador esté encendido.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img1')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    Volumen moderado.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img2')">Ver ejemplo</span>
+  </li>
+
+  <li>
+    Cables bien conectados.
+    <span class="ver-ejemplo" onclick="mostrarPopup('img3')">Ver ejemplo</span>
+  </li>
+</ul>
+
+<div id="img1" class="popup" onclick="cerrarPopup('img1')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/ecualizador.png">
+  </div>
+</div>
+
+<div id="img2" class="popup" onclick="cerrarPopup('img2')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/volumen.png">
+  </div>
+</div>
+
+<div id="img3" class="popup" onclick="cerrarPopup('img3')">
+  <div class="popup-content">
+    <span class="cerrar">&times;</span>
+    <img src="img/audio.png">
+  </div>
+</div>
+
+
+
+<h3>⚠️ Recomendaciones</h3>
+<ul>
+  <li>No subir el volumen al máximo.</li>
+  <li>No desconectar micrófonos encendidos.</li>
+</ul>
+
+<div class="volver">
+  <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
+</div>
+</div>
+<script>
+  function mostrarPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function cerrarPopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+</body>
+</html>
