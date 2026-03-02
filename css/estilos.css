@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.7;
+  font-size: 18px; /* LETRA BASE MÁS GRANDE */
+}
+
+
+header {
+  background-color: #f37021; /* Naranja tipo Trilce */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+h2 {
+  color: #f37021;
+  font-size: 26px;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #555;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 40px auto; /* centra horizontal y separa arriba */
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+ul li, ol li {
+  margin-bottom: 12px;
+}
+
+
+
+ul, ol {
+  margin-left: 20px;
+}
+
+a {
+  color: #f37021;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #777;
+}
+p {
+  max-width: 80ch;
+}
+
+
+
+
+
+
+
+/* Enlace ver ejemplo */
+.ver-ejemplo {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #f37021;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Fondo del popup */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Contenido del popup */
+.popup-content {
+  background: white;
+  margin: 10% auto;
+  padding: 15px;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.popup-content img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Botón cerrar */
+.cerrar {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #f37021;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 19px; /* incluso un poco más grande en móvil */
+  }
+
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+.btn-volver {
+  font-size: 22px;
+  padding: 16px 32px;
+}
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+
+
+.volver {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-volver {
+  display: inline-block;
+  background-color: #f37021;
+  color: white;
+  font-size: 20px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-volver:hover {
+  background-color: #d85f1b;
+  transform: scale(1.03);
+}
